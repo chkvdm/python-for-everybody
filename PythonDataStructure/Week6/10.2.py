@@ -10,8 +10,7 @@ for line in handle:
     words = line.split()
     if not len(words) >= 5:
         continue
-    time = words[5]
-    time_code = time.split(':')
+    time_code = words[5].split(':')
     hours[time_code[0]] = hours.get(time_code[0], 0) + 1
 
 for k,v in sorted(hours.items()):
