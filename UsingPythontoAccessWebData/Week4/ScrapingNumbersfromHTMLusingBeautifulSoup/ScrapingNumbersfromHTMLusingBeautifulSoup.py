@@ -14,4 +14,5 @@ tags = soup('span')
 x = list()
 for tag in tags:
     x.append(float(tag.contents[0]))
-print (sum(x))
+print ('Count', len(x))
+print ('Sum', sum(x))
