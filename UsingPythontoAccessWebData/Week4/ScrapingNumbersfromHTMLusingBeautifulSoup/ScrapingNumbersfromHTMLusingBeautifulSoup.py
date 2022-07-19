@@ -11,8 +11,5 @@ html = urllib.request.urlopen(url, context=ctx).read()
 soup = BeautifulSoup(html, 'html.parser')
 
 tags = soup('span')
-x = list()
 for tag in tags:
-    x.append(float(tag.contents[0]))
-print ('Count', len(x))
-print ('Sum', sum(x))
+    print (tag.contents[0])
