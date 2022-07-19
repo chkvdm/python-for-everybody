@@ -10,6 +10,10 @@ url = input('Enter url - ')
 html = urllib.request.urlopen(url, context=ctx).read()
 soup = BeautifulSoup(html, 'html.parser')
 
+count = list()
 tags = soup('span')
 for tag in tags:
-    print (tag.contents[0])
+    count.append(int(tag.contents[0]))
+
+print (len(count))
+print (sum(count))
