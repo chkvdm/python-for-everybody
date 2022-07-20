@@ -7,6 +7,8 @@ ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
 url = input('Enter url - ')
+# http://py4e-data.dr-chuck.net/comments_1584017.html
+
 html = urllib.request.urlopen(url, context=ctx).read()
 soup = BeautifulSoup(html, 'html.parser')
 
