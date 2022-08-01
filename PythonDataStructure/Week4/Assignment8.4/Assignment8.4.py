@@ -1,5 +1,5 @@
 fname = input("Enter file name: ")
-# /Users/vadim/Documents/PythonForEverybody/PythonDataStructure/Week4/Assignment8.4/romeo.txt
+# /Users/...../Assignment8.4/romeo.txt
 
 fh = open(fname)
 words = list()
