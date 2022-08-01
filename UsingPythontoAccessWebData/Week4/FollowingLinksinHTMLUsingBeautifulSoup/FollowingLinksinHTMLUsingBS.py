@@ -12,7 +12,8 @@ pstn = int(input('position '))
 name = list()
 
 
-# Version_1. With iteration
+
+# Version_1. Iteration.
 
 for turn in range(count):
     link = list()
@@ -23,4 +24,21 @@ for turn in range(count):
     name.append(tags[pstn - 1].contents[0])
     continue
 
+print ('\n'.join(name))
+
+
+
+# version_2. Recurcion.
+
+def find_name(url, count):
+    html = urllib.request.urlopen(url, context=ctx).read()
+    soup = BeautifulSoup(html, 'html.parser')
+    tags = soup('a')
+    url = tags[pstn - 1].get('href', None)
+    nm = tags[pstn - 1].contents[0]
+    name.append(nm)
+    if count > 1:
+        find_name(url, (count) - 1)
+
+find_name(url, count)
 print ('\n'.join(name))
