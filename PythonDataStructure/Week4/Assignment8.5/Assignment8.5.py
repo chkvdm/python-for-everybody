@@ -1,5 +1,5 @@
 fname = input("Enter file name: ")
-# /Users/...../Assignment8.5/mbox-short.txt
+# /Users/....../Assignment8.5/mbox-short.txt
 
 fh = open(fname)
 count = 0
