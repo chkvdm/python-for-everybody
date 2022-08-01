@@ -1,8 +1,7 @@
-name = input("Enter file:")
-if len(name) < 1:
-    name = "mbox-short.txt"
-handle = open(name)
+name = input("Enter file: ")
+# /Users/...../Assignment8.5/mbox-short.txt
 
+handle = open(name)
 hours = dict()
 for line in handle:
     if not line.startswith('From '):
