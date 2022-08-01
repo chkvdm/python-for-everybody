@@ -10,8 +10,8 @@ url = input('Enter url: ')
 jeyson = urllib.request.urlopen(url).read().decode()
 jeyson_dict = json.loads(jeyson)
 
-for usr in jeyson_dict["comments"]:
-    counts.append(usr["count"])
+for user in jeyson_dict["comments"]:
+    counts.append(user["count"])
 
 print (len(counts))
 print (sum(counts))
