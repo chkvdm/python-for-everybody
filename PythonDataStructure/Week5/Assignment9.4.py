@@ -9,7 +9,7 @@ for line in handle:
     if not line.startswith('From '):
         continue
     words = line.split()
-    if len(word) > 2:
+    if len(words) > 2:
         from_val[words[1]] = from_val.get(words[1], 0) + 1
 
 most_sender = " "
