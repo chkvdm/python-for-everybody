@@ -7,8 +7,8 @@ nums = list()
 text = file.read()
 number = re.findall('[0-9]+', text)
 for num in number:
-    num = float(num)
-    nums.append(num)
+    nums.append(float(num))
+
 print (sum(nums))
 
 
