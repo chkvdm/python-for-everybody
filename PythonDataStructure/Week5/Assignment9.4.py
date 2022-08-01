@@ -1,7 +1,5 @@
 name = input("Enter file: ")
-# File name: mbox-short.txt.
-# The file is not in the list because the assignment was run online. 
-# Downloading the file is not provided by the condition.
+# /Users/...../Assignment8.5/mbox-short.txt
 
 handle = open(name)
 from_val = dict()
