@@ -8,6 +8,7 @@ cur.execute('''DROP TABLE IF EXISTS Counts''')
 cur.execute('''CREATE TABLE Counts(email TEXT, count INTEGER)''')
 
 fname = input('Enter file name: ')
+# file name 'mbox.txt'
 fh = open(fname)
 for line in fh:
     if not line.startswith('From '):
