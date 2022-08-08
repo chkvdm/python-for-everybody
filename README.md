@@ -7,7 +7,7 @@ This Specialization will introduce fundamental programming concepts including da
 1. <code>[Programming for Everybody (Getting Started with Python)]()</code>
 2. <code>[Python Data Structure](https://github.com/chkvdm/PythonForEverybody/tree/main/PythonDataStructure)</code>
 3. <code>[Using Python to Access Web Data](https://github.com/chkvdm/PythonForEverybody/tree/main/UsingPythontoAccessWebData)</code>
-4. <code>[Using Databases with Python]()</code>
+4. <code>[Using Databases with Python](https://github.com/chkvdm/PythonForEverybody/tree/main/UsingDatabasesWithPython/Week2)</code>
 5. <code>[Capstone: Retrieving, Processing, and Visualizing Data with Python]()</code>
 
 All the sections of the list are clickable and contain links to my solutions to the assignments of the Python For Everybody specialization.
