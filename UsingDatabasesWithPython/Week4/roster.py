@@ -29,6 +29,7 @@ CREATE TABLE Member (
 ''')
 
 fname = input('Enter file name: ')
+# roster_data.json
 
 str_data = open(fname).read()
 json_data = json.loads(str_data)
